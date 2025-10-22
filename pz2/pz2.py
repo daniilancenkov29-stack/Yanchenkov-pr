@@ -1,9 +1,8 @@
-#С начала суток прошло N секунд (N — целое). Найти колличество полных минут, прошедших с начала суток.
-while True:
-    try:
-        N = int(input("Введите количество секунд: "))
-        minutes = N // 60
-        print(f"Количество полных минут: {minutes}")
-        break
-    except ValueError:
-        print("Ошибка: введите целое число!")
+# Извлеките из числа две первые цифры
+try:
+    n=int(input("Введите число:"))
+    first_digit = n // 10
+    second_digit = n % 10
+    print(f"Две первые цифры:{first_digit} и {second_digit}")
+except ValueError:
+    print("Это не число")
