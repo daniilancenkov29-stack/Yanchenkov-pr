@@ -1,10 +1,15 @@
-A = int(input("A: "))
-B = int(input("B: "))
-num = A
-while num <= B:
-    count = num - A + 1
-    i = 0
-    while i < count:
-        print(num)
-        i += 1
-    num += 1
+n = input("Введите число N: ")
+while True:
+    try:
+        n = int(n)
+        break
+    except ValueError:
+        print("Неправильное число")
+        n = input("Введите число N: ")
+summa = 0
+i = 1
+while i <= n:
+    summa += i
+    i += 2
+
+print("Сумма нечетных чисел от 1 до", n, ":", summa)
