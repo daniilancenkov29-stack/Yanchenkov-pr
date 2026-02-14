@@ -1,16 +1,11 @@
-#Составить функцию, которая выведет на экран строку, содержащую задаваемое с клавиатуры число символов.
-def print_line(n):
-    s = ''
-    for i in range(n):
-        s += '*'
-    print(s)
+#Описать функцию с параметром, которая находит все четные числа от 2 до числа N. Ввод N и отображение результата предусмотреть все функции.
+def find_even_numbers(n):
+    evens = []
+    for i in range(n + 1):
+        if i % 2 == 1:
+            evens.append(i)
+    return evens
 
-n = input("Введите число символов: ")
-while type(n) != int:
-    try:
-        n = int(n)
-    except ValueError:
-        print("Ошибка!")
-        n = input("Введите число символов: ")
-
-print_line(n)
+N = int(input("Введите число N: "))
+result = find_even_numbers(N)
+print("Четные числа от 0 до", N, ":", result)
