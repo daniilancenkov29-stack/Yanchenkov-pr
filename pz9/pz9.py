@@ -17,8 +17,17 @@ print("\n2. товары из пятерочки, которых нету в м�
 for tovar in pyaterka - magnit:
     print("-", tovar)
 
-print("\n3. перечень всех товаров (уникальные):")
-for tovar in magnit | pyaterka:
+print("\n3. перечень всех товаров:")
+
+vse_tovary = set()
+
+for tovar in magnit:
+    vse_tovary.add(tovar)
+
+for tovar in pyaterka:
+    vse_tovary.add(tovar)
+
+for tovar in vse_tovary:
     print("-", tovar)
 
 print("\n4. равны ли перечни товаров?:")
