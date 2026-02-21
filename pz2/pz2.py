@@ -1,17 +1,8 @@
-# Извлеките из числа две первые цифры
-n = input("Введите число N: ")
-while True:
-    try:
-        n = int(n)
-        break
-    except ValueError:
-        print("Неправильное число!")
-        n = input("Введите число N: ")
-
-summa = 0
-i = 1
-while i <= n:
-    summa += i
-    i += 2
-
-print("Сумма нечетных чисел от 1 до", n, ":", summa)
+chetverg = {"bread": 250, "milk": 60, "apple": 52}
+product = str(input("введите название продукта"))
+weight = int(input("введите вес продукта в граммах"))
+if product in chetverg:
+    x = weight * chetverg[product]/100
+    print(x)
+else:
+    print("продукта нет")    
