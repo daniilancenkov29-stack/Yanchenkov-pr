@@ -13,5 +13,5 @@ while i < len(items):
         i += 1
     data[product] = sales
 for product, values in data.items():
-    avg = sum(values) / len(values)
-    print(f"{product}: средние продажи = {avg:.2f}")
+    avg = sum(values) / len(values)  
+    print(f"{product}: средние продажи = {avg}")
