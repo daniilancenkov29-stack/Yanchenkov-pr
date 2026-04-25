@@ -12,6 +12,7 @@ while i < len(items):
         sales.append(int(items[i]))
         i += 1
     data[product] = sales
+print(data)
 for product, values in data.items():
     avg = sum(values) / len(values)  
     print(f"{product}: средние продажи = {avg}")
